@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/2/user/2643039).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Саввопуло](https://up.htmlacademy.ru/htmlcss-individual/2/user/2643039).
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
