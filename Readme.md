@@ -2,6 +2,7 @@
 
 * Студент: [Александр Саввопуло](https://up.htmlacademy.ru/htmlcss-individual/2/user/2643039).
 * Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
+* Сайт: https://warm-tune.github.io/2643039-sedona-2
 
 ---
 
