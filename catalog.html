@@ -9,18 +9,18 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a href="/index.html" class="logo-link">
+        <a href="index.html" class="logo-link">
           <img src="#" class="logo" alt="Эмблема города «Седона»">
         </a>
         <ul class="navigation-menu">
           <li class="navigation-menu-item">
-            <a href="/index.html" class="navigation-menu-link">Главная</a>
+            <a href="index.html" class="navigation-menu-link">Главная</a>
           </li>
           <li class="navigation-menu-item">
             <a href="#" class="navigation-menu-link">О Седоне</a>
           </li>
           <li class="navigation-menu-item">
-            <a href="/catalog.html" class="navigation-menu-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-menu-link" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-actions">
@@ -36,7 +36,7 @@
             <span class="favourites-count">12</span>
           </li>
           <li class="navigation-action-item">
-            <a href="/catalog.html" class="navigation-action-catalog" aria-label="Каталог отелей">
+            <a href="catalog.html" class="navigation-action-catalog" aria-label="Каталог отелей">
               Хочу сюда!
             </a>
           </li>
@@ -50,7 +50,7 @@
         </h1>
         <ol class="catalog-breadcrumbs" aria-label="Хлебные крошки">
           <li>
-            <a href="/index.html" class="catalog-breadcrumbs-home">
+            <a href="index.html" class="catalog-breadcrumbs-home">
               <span class="visually-hidden">Домой</span>
             </a>
           </li>
@@ -60,7 +60,7 @@
             </a>
           </li>
         </ol>
-        <form class="catalog-search" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="catalog-search" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Критерии поиска</h2>
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -152,17 +152,20 @@
             </div>
           </li>
           <li class="search-results-item">
-            <img src="#" alt="Фотография местоположения гостиницы">
-            <h3>Villas at Poco Diablo</h3>
+            <a href="#" class="search-results-item-link">
+              <img src="#" alt="Фотография местоположения гостиницы">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
             <p class="housing_price">
               <span>Гостиница</span>
               <span>От 5000 ₽</span>
             </p>
             <div class="search-results-item-actions">
               <a href="#" class="search-results-item-details">Подробнее</a>
-              <button class="search-results-item-favourite">В избранное</button>
+              <button class="search-results-item-favourite favourite-selected">В избранном</button>
             </div>
             <div class="search-results-item-rating">
+              <!-- не очень. один тег на звезды. p span -->
               <ul class="rating-stars">
                 <li class="rating-star"></li>
                 <li class="rating-star"></li>

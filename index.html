@@ -9,18 +9,18 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="logo-link">
+        <a class="logo-link" aria-current="page">
           <img src="#" class="logo" alt="Эмблема города «Седона»">
         </a>
         <ul class="navigation-menu">
           <li class="navigation-menu-item">
-            <a href="/index.html" class="navigation-menu-link">Главная</a>
+            <a href="index.html" class="navigation-menu-link" aria-current="page">Главная</a>
           </li>
           <li class="navigation-menu-item">
             <a href="#" class="navigation-menu-link">О Седоне</a>
           </li>
           <li class="navigation-menu-item">
-            <a href="/catalog.html" class="navigation-menu-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-menu-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-actions">
@@ -36,7 +36,7 @@
             <span class="favourites-count">12</span>
           </li>
           <li class="navigation-action-item">
-            <a href="/catalog.html" class="navigation-action-catalog" aria-label="Каталог отелей">
+            <a href="catalog.html" class="navigation-action-catalog" aria-label="Каталог отелей">
               Хочу сюда!
             </a>
           </li>
@@ -161,7 +161,8 @@
           Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш e-mail" name="email">
+          <label for="subscription_email_field">Введите ваш email</label>
+          <input id="subscription_email_field" type="email" placeholder="Ваш e-mail" name="email">
           <input type="submit" value="Подписаться">
         </form>
       </section>
