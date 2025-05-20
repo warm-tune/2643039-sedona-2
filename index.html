@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - небольшой городок в Аризоне, заслуживающий большего!</title>
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,18 +26,18 @@
         </ul>
         <ul class="navigation-actions">
           <li class="navigation-action-item">
-            <a href="#" class="navigation-action-search">
+            <a href="#" class="navigation-action icon-search">
               <span class="visually-hidden">Поиск отелей</span>
             </a>
           </li>
           <li class="navigation-action-item">
-            <a href="#" class="navigation-action-favourites">
+            <a href="#" class="navigation-action icon-favourites">
               <span class="visually-hidden">Избранные отели</span>
             </a>
             <span class="favourites-count">12</span>
           </li>
           <li class="navigation-action-item">
-            <a href="#" class="navigation-action-catalog" aria-label="Каталог отелей">
+            <a href="#" class="navigation-action button action-button" aria-label="Каталог отелей">
               Хочу сюда!
             </a>
           </li>
@@ -45,13 +46,13 @@
     </header>
     <main class="index-main">
       <header class="index-main-header">
-        <section class="welcome-message-section">
-          <img class="index-main-title-image" src="images/welcome-message.png" width="458" height="352" alt="Добро пожаловать в город «Седона»!">
+        <section class="welcome-image-section">
+          <img src="images/welcome-image.png" width="458" height="352" alt="Добро пожаловать в город «Седона»!">
         </section>
         <h1 class="index-main-title">
           Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
         </h1>
-        <p>
+        <p class="index-main-description">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </header>
@@ -114,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages-section">
         <h2 class="advantages-section-title">
           Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
         </h2>
@@ -123,6 +124,7 @@
         </p>
         <ul class="advantages-list">
           <li class="advantages-item">
+            <span class="advantages-icon advantages-house-icon"></span>
             <h3 class="advantage-title">
               Жильё
             </h3>
@@ -131,12 +133,14 @@
             </p>
           </li>
           <li class="advantages-item">
+            <span class="advantages-icon advantages-food-icon"></span>
             <h3 class="advantage-title">Еда</h3>
             <p class="advantage-description">
               Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
             </p>
           </li>
           <li class="advantages-item">
+            <span class="advantages-icon advantages-gifts-icon"></span>
             <h3 class="advantage-title">Сувениры</h3>
             <p class="advantage-description">
               Не только китайского,<br> но и настоящего местного<br> производства!
@@ -151,7 +155,7 @@
         <p class="catalog-search-section-description">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="catalog-search-dialog-trigger">
+        <button class="button action-button">
           Поиск гостиницы в седоне
         </button>
       </section>
@@ -164,8 +168,8 @@
         </p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription_email_field">Введите ваш email</label>
-          <input id="subscription_email_field" type="email" placeholder="Ваш e-mail" name="email">
-          <button type="submit">Подписаться</button>
+          <input class="email-field" id="subscription_email_field" type="email" placeholder="Ваш e-mail" name="email">
+          <button class="email-submit-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -176,21 +180,21 @@
         </h2>
         <ul class="social-network-list">
           <li class="social-network-item">
-            <a href="https://vk.com/htmlacademy" class="social_network_vkontakte">
+            <a href="https://vk.com/htmlacademy" class="social-network social-network-vkontakte">
               <span class="visually-hidden">
                 Vkontakte
               </span>
             </a>
           </li>
           <li class="social-network-item">
-            <a href="https://t.me/htmlacademy " class="social_network_telegram">
+            <a href="https://t.me/htmlacademy " class="social-network social-network-telegram">
               <span class="visually-hidden">
                 Telegram
               </span>
             </a>
           </li>
           <li class="social-network-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="social_network_youtube">
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social-network social-network-youtube">
               <span class="visually-hidden">
                 Youtube
               </span>
