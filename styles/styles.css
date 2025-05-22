@@ -49,7 +49,7 @@ body {
 }
 
 .action-button:hover,
-.action-button:focus {
+.action-button:focus-visible {
   background-color: #615048;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .primary-button:hover,
-.primary-button:focus {
+.primary-button:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .success-button:hover,
-.success-button:focus {
+.success-button:focus-visible {
   background-color: #6C9E42;
 }
 
@@ -100,7 +100,7 @@ body {
   opacity: 60%;
 }
 
-.text-button:focus {
+.text-button:focus-visible {
   border: 3px solid #83B3D3;
 }
 
@@ -159,6 +159,23 @@ body {
 
 .email-subscription-form {
   font-size: 0;
+}
+
+.search-criteria-label {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.search-criteria-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.search-criteria-radio {
+  width: 20px;
+  height: 20px;
 }
 
 /* Header */
@@ -388,6 +405,64 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+/* Catalog page */
+.catalog-main-header {
+  padding: 35px 70px 70px 70px;
+  background: #DAE9F1 url("../images/catalog-background.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.catalog-main-title {
+  margin-top: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-breadcrumbs {
+  list-style-type: none;
+}
+
+.catalog-breadcrumbs-item {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.catalog-breadcrumbs-home {
+  background: url("../images/home-icon.svg") no-repeat;
+  background-size: 20px;
+}
+
+.catalog-search-criteria-fieldset {
+  border: none;
+}
+
+.catalog-search-criteria-fieldset legend {
+  margin-bottom: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-search-price-range {
+  width: calc(143px - 20px); /* 20px paddings*/
+}
+
+.catalog-search-min-price {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.catalog-search-max-price {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /* Footer */
