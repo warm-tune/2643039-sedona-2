@@ -95,8 +95,10 @@
       </fieldset>
       <fieldset class="catalog-search-criteria-fieldset">
         <legend>Стоимость, ₽:</legend>
-        <input class="input-field catalog-search-price-range catalog-search-min-price" type="number" name="min_price" aria-label="Минимальная цена" value="0">
-        <input class="input-field catalog-search-price-range catalog-search-max-price" type="number" name="max_price" aria-label="Максимальная цена" value="9000">
+        <input class="input-field catalog-search-price-range catalog-search-min-price" type="number" name="min_price"
+               aria-label="Минимальная цена" value="0">
+        <input class="input-field catalog-search-price-range catalog-search-max-price" type="number" name="max_price"
+               aria-label="Максимальная цена" value="9000">
         <!-- PRICE SLIDER GOES HERE -->
       </fieldset>
       <fieldset class="catalog-search-criteria-fieldset">
@@ -109,22 +111,22 @@
   <section class="search-results">
     <div>
       <h2>Найдено гостиниц: 38</h2>
-      <select class="search-results-sorting" name="sorting" aria-label="Сортировка">
+      <select class="select-field search-results-sorting" name="sorting" aria-label="Сортировка">
         <option value="price_low_to_high">Сначала дешевые</option>
       </select>
       <ul class="search-results-view-selector" aria-label="Выбор отображения результатов поиска">
         <li>
-          <a href="catalog.html?view=tile" class="tile-view">
+          <a href="catalog.html?view=tile" class="view-selector-item tile-view">
             <span class="visually-hidden">Плитка</span>
           </a>
         </li>
         <li>
-          <a href="catalog.html?view=card" class="card-view">
+          <a href="catalog.html?view=card" class="view-selector-item card-view">
             <span class="visually-hidden">Расширенный предпросмотр</span>
           </a>
         </li>
         <li>
-          <a href="catalog.html?view=list" class="list-view">
+          <a href="catalog.html?view=list" class="view-selector-item list-view">
             <span class="visually-hidden">Список</span>
           </a>
         </li>
@@ -139,12 +141,12 @@
           <span>От 4000 ₽</span>
         </p>
         <div class="search-results-item-actions">
-          <a href="#" class="search-results-item-details">Подробнее</a>
-          <button class="search-results-item-favourite">В избранное</button>
+          <a href="#" class="button action-button search-results-item-details">Подробнее</a>
+          <button class="button primary-button search-results-item-favourite">В избранное</button>
         </div>
         <div class="search-results-item-rating">
           <span class="rating-stars four-stars"></span>
-          <span>Рейтинг: 8,5</span>
+          <span class="rating-value">Рейтинг: 8,5</span>
         </div>
       </li>
       <li class="search-results-item">
@@ -157,13 +159,13 @@
           <span>От 5000 ₽</span>
         </p>
         <div class="search-results-item-actions">
-          <a href="#" class="search-results-item-details">Подробнее</a>
-          <button class="search-results-item-favourite favourite-selected">В избранном</button>
+          <a href="#" class="button action-button search-results-item-details">Подробнее</a>
+          <button class="button primary-button search-results-item-favourite favourite-selected">В избранном</button>
         </div>
         <div class="search-results-item-rating">
           <!-- не очень. один тег на звезды. p span -->
           <span class="rating-stars four-stars"></span>
-          <span>Рейтинг: 9,2</span>
+          <span class="rating-value">Рейтинг: 9,2</span>
         </div>
       </li>
       <li class="search-results-item">
@@ -174,12 +176,12 @@
           <span>От 2500 ₽</span>
         </p>
         <div class="search-results-item-actions">
-          <a href="#" class="search-results-item-details">Подробнее</a>
-          <button class="search-results-item-favourite">В избранное</button>
+          <a href="#" class="button action-button search-results-item-details">Подробнее</a>
+          <button class="button primary-button search-results-item-favourite">В избранное</button>
         </div>
         <div class="search-results-item-rating">
           <span class="rating-stars three-stars"></span>
-          <span>Рейтинг: 6,9</span>
+          <span class="rating-value">Рейтинг: 6,9</span>
         </div>
       </li>
       <li class="search-results-item">
@@ -190,25 +192,37 @@
           <span>От 1500 ₽</span>
         </p>
         <div class="search-results-item-actions">
-          <a href="#" class="search-results-item-details">Подробнее</a>
-          <button class="search-results-item-favourite">В избранное</button>
+          <a href="#" class="button action-button search-results-item-details">Подробнее</a>
+          <button class="button primary-button search-results-item-favourite">В избранное</button>
         </div>
         <div class="search-results-item-rating">
           <span class="rating-stars two-stars"></span>
-          <span>Рейтинг: 5,0</span>
+          <span class="rating-value">Рейтинг: 5,0</span>
         </div>
       </li>
     </ol>
     <ol class="pagination">
-      <li class="page-number">1</li>
-      <li class="page-number">2</li>
-      <li class="page-number">3</li>
-      <li class="page-number">4</li>
-      <li class="page-number ellipsis">...</li>
-      <li class="page-number">10</li>
+      <li>
+        <a class="page-number current-page">1</a>
+      </li>
+      <li>
+        <a href="#" class="page-number">2</a>
+      </li>
+      <li>
+        <a href="#" class="page-number">3</a>
+      </li>
+      <li>
+        <a href="#" class="page-number">4</a>
+      </li>
+      <li class="ellipsis">
+        <a class="page-number ellipsis">...</a>
+      </li>
+      <li>
+        <a href="#" class="page-number">10</a>
+      </li>
     </ol>
   </section>
-  <section class="email-subscription">
+  <section class="email-subscription email-subscription-light-variant">
     <h2 class="email-subscription-title">
       Подпишитесь на рассылку
     </h2>
@@ -216,7 +230,7 @@
       Только полезная информация и никакого спама,<br> честное бойскаутское!
     </p>
     <form class="email-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="subscription_email_field">Введите ваш email</label>
+      <label class="visually-hidden" for="subscription_email_field">Введите ваш email</label>
       <input class="input-field email-input-field" id="subscription_email_field" type="email" placeholder="Ваш e-mail"
              name="email">
       <button class="button primary-button email-submit-button" type="submit">Подписаться</button>
@@ -265,8 +279,18 @@
       Партнеры
     </h2>
     <a href="https://htmlacademy.ru/" class="partner">
-      <img class="partner_htmlacademy_logo" src="images/htmlacademy-logo.svg" width="115" height="33"
-           alt="Html Academy">
+      <svg class="partner_htmlacademy_logo" aria-label="Html Academy" xmlns="http://www.w3.org/2000/svg" width="115"
+           height="34" fill="none">
+        <g fill="#000" clip-path="url(#a)">
+          <path
+            d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 .36h115v33H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
     </a>
   </section>
 </footer>

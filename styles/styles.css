@@ -14,6 +14,23 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   font-family: "PT Sans", "Helvetica", sans-serif;
@@ -24,6 +41,7 @@ body {
 /* Generic button styles */
 .button {
   padding: 8px 50px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -114,6 +132,28 @@ body {
 }
 
 /* Form */
+.select-field {
+  padding: 14px 20px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  outline: none;
+}
+
+.select-field:focus,
+.select-field:focus-visible,
+.select-field:hover {
+  border-color: #68A2CA;
+}
+
+.select-field:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .input-field {
   color: #000000;
   padding: 12px 20px;
@@ -121,10 +161,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   vertical-align: middle;
-  outline: none;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+  outline: none;
 }
 
 .input-field::placeholder {
@@ -390,6 +430,10 @@ body {
   background-size: cover;
 }
 
+.email-subscription-light-variant {
+  background: unset;
+}
+
 .email-subscription-title {
   margin-top: 0;
   color: #FFFFFF;
@@ -397,6 +441,18 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.email-subscription-light-variant .email-subscription-title {
+  color: #000000;
+}
+
+.email-subscription-light-variant .email-subscription-description {
+  color: #000000;
+}
+
+.email-subscription-light-variant .email-input-field {
+  background-color: #F2F2F2;
 }
 
 .email-subscription-description {
@@ -439,6 +495,43 @@ body {
   background-size: 20px;
 }
 
+.search-results-sorting {
+  width: 292px;
+}
+
+.search-results-view-selector {
+  list-style: none;
+}
+
+.view-selector-item {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  outline: none;
+}
+
+.view-selector-item:hover, .view-selector-item:active {
+  border-color: #000000;
+}
+
+.view-selector-item:focus-visible {
+  border-color: #68A2CA;
+}
+
+.view-selector-item.tile-view {
+  background: url("../images/view-tile-icon.svg") no-repeat center center;
+}
+
+.view-selector-item.card-view {
+  background: url("../images/view-cards-icon.svg") no-repeat center center;
+}
+
+.view-selector-item.list-view {
+  background: url("../images/view-list-icon.svg") no-repeat center center;
+}
+
 .catalog-search-criteria-fieldset {
   border: none;
 }
@@ -465,27 +558,184 @@ body {
   border-bottom-left-radius: 0;
 }
 
+/* Search results */
+
+.search-results h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-results-list {
+  list-style: none;
+}
+
+.search-results-item {
+  width: 340px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.search-results-item img {
+  margin-bottom: 16px;
+}
+
+.search-results-item h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.housing_price {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-results-item-actions {
+  margin-bottom: 16px;
+}
+
+.search-results-item-details {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.search-results-item-favourite {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.rating-stars {
+  display: inline-block;
+  height: 17px;
+  background: url("../images/star-icon.svg") repeat-x;
+  background-position-y: center;
+}
+
+.two-stars {
+  width: calc(18px * 2);
+}
+
+.three-stars {
+  width: calc(18px * 3);
+}
+
+.four-stars {
+  width: calc(18px * 4);
+}
+
+.rating-value {
+  display: inline-block;
+  width: 140px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  list-style: none;
+  border-top: 1px solid #E6E6E6;
+}
+
+.page-number {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  border: 1px solid #82B3D3;
+  outline: none;
+}
+
+.page-number:hover,
+.page-number:focus-visible {
+  background-color: #68A2CA;
+}
+
+.page-number:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+  border: 1px solid #82B3D3;
+}
+
+.current-page,
+.current-page:hover {
+  color: #000000;
+  background-color: #F2F2F2;
+  border: unset;
+}
+
+.ellipsis,
+.ellipsis:hover {
+  color: #000000;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: unset;
+  border: unset;
+}
+
 /* Footer */
 .page-footer {
   padding: 40px 70px 30px 70px;
+}
+
+.social-network-list {
+  padding: 0;
+  list-style: none;
 }
 
 .social-network {
   display: inline-block;
   width: 47px;
   height: 40px;
+  vertical-align: middle;
+  background-color: #83B3D3;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}
+
+.social-network:hover,
+.social-network:focus-visible {
+  background-color: #68A2CA;
+}
+
+.social-network:active {
+  background-color: rgba(104, 162, 202, 0.3);
 }
 
 .social-network-vkontakte {
-  background: url("../images/social-vk-icon.svg") no-repeat center;
+  mask-image: url("../images/social-vk-icon.svg");
 }
 
 .social-network-telegram {
-  background: url("../images/social-telegram-icon.svg") no-repeat center;
+  mask-image: url("../images/social-telegram-icon.svg");
 }
 
 .social-network-youtube {
-  background: url("../images/social-youtube-icon.svg") no-repeat center;
+  mask-image: url("../images/social-youtube-icon.svg");
 }
 
 .phone-number {
@@ -495,4 +745,35 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
+}
+
+.phone-number:hover,
+.phone-number:focus-visible {
+  color: #756157;
+}
+
+.phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.partner {
+  outline: none;
+}
+
+.partner_htmlacademy_logo {
+  outline: none;
+}
+
+.partner_htmlacademy_logo path {
+  fill: #000000;
+}
+
+.partner_htmlacademy_logo:hover path,
+.partner_htmlacademy_logo:focus-visible path {
+  fill: #756157;
+}
+
+.partner_htmlacademy_logo:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
