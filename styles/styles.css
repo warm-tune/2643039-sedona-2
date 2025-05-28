@@ -301,10 +301,6 @@ img {
   color: #333333;
 }
 
-.feature-container {
-
-}
-
 .feature-title {
   font-size: 24px;
   line-height: 28px;
@@ -630,7 +626,7 @@ img {
   color: #000000;
 }
 
-.housing_price {
+.housing-price {
   margin-top: 0;
   margin-bottom: 16px;
 
@@ -813,19 +809,19 @@ img {
   outline: none;
 }
 
-.partner_htmlacademy_logo {
+.partner-htmlacademy-logo {
   outline: none;
 }
 
-.partner_htmlacademy_logo path {
+.partner-htmlacademy-logo path {
   fill: #000000;
 }
 
-.partner_htmlacademy_logo:hover path,
-.partner_htmlacademy_logo:focus-visible path {
+.partner-htmlacademy-logo:hover path,
+.partner-htmlacademy-logo:focus-visible path {
   fill: #756157;
 }
 
-.partner_htmlacademy_logo:active path {
+.partner-htmlacademy-logo:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
