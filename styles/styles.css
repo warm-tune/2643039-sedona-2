@@ -343,11 +343,11 @@ img {
 .features-item {
   text-align: center;
 
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .features-item:nth-child(2n) {
-  background-color: #83B3D333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-section {
