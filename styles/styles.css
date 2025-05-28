@@ -253,7 +253,7 @@ img {
   background-size: 20px;
 }
 
-.navigation-action.icon-favourites + .favourites-count {
+.favourites-count {
   padding: 5px;
 
   font-size: 10px;
