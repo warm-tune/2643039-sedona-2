@@ -20,9 +20,6 @@
   box-sizing: border-box;
 }
 
-:root {
-}
-
 body {
   margin: 0;
 
@@ -305,7 +302,7 @@ img {
 }
 
 .feature-container {
-  text-align: center;
+
 }
 
 .feature-title {
@@ -325,6 +322,8 @@ img {
 
 .features-block-top .feature-container,
 .features-block-bottom .feature-container {
+  text-align: center;
+
   background-color: #82B3D3;
 }
 
@@ -341,11 +340,13 @@ img {
   list-style: none;
 }
 
-.features-item .feature-container {
+.features-item {
+  text-align: center;
+
   background-color: #83B3D31F;
 }
 
-.features-item:nth-child(2n) .feature-container {
+.features-item:nth-child(2n) {
   background-color: #83B3D333;
 }
 
