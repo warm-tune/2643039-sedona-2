@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div class="page-container">
 <header class="page-header">
   <nav class="navigation">
     <a href="index.html" class="logo-link">
@@ -61,9 +62,9 @@
         </a>
       </li>
     </ol>
-    <form class="catalog-search" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="catalog-search-form" action="https://echo.htmlacademy.ru/" method="get">
       <h2 class="visually-hidden">Критерии поиска</h2>
-      <fieldset class="catalog-search-criteria-fieldset">
+      <fieldset class="catalog-search-form-criteria-fieldset">
         <legend>Инфраструктура:</legend>
         <label class="search-criteria-label">
           <input class="search-criteria-checkbox" type="checkbox" name="pool" checked>
@@ -78,7 +79,7 @@
           Wi-Fi
         </label>
       </fieldset>
-      <fieldset class="catalog-search-criteria-fieldset">
+      <fieldset class="catalog-search-form-criteria-fieldset">
         <legend>Тип жилья:</legend>
         <label class="search-criteria-label">
           <input class="search-criteria-radio" type="radio" name="housing_type" value="hotel" checked>
@@ -93,15 +94,17 @@
           Апартаменты
         </label>
       </fieldset>
-      <fieldset class="catalog-search-criteria-fieldset">
+      <fieldset class="catalog-search-form-criteria-fieldset">
         <legend>Стоимость, ₽:</legend>
-        <input class="input-field catalog-search-price-range catalog-search-min-price" type="number" name="min_price"
-               aria-label="Минимальная цена" value="0">
-        <input class="input-field catalog-search-price-range catalog-search-max-price" type="number" name="max_price"
-               aria-label="Максимальная цена" value="9000">
+        <fieldset class="catalog-price-fieldset">
+          <input class="input-field catalog-search-form-price-range catalog-search-form-min-price" type="number" name="min_price"
+                 aria-label="Минимальная цена" value="0">
+          <input class="input-field catalog-search-form-price-range catalog-search-form-max-price" type="number" name="max_price"
+                 aria-label="Максимальная цена" value="9000">
+        </fieldset>
         <!-- PRICE SLIDER GOES HERE -->
       </fieldset>
-      <fieldset class="catalog-search-criteria-fieldset">
+      <fieldset class="catalog-search-form-criteria-fieldset">
         <legend class="visually-hidden">Действия</legend>
         <button class="button primary-button" type="submit">Применить</button>
         <button class="button text-button" type="reset">Сбросить</button>
@@ -109,7 +112,7 @@
     </form>
   </header>
   <section class="search-results">
-    <div>
+    <div class="search-results-toolbar">
       <h2>Найдено гостиниц: 38</h2>
       <select class="select-field search-results-sorting" name="sorting" aria-label="Сортировка">
         <option value="price_low_to_high">Сначала дешевые</option>
@@ -294,6 +297,7 @@
     </a>
   </section>
 </footer>
+</div>
 </body>
 
 </html>
