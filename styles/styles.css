@@ -381,29 +381,17 @@ img {
   color: #333333;
 }
 
-.feature-title {
-  margin-bottom: 30px;
-
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
-.feature-description {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-}
-
-.features-block-top,
-.features-block-bottom {
+.feature-block {
   display: flex;
+  grid-column: span 3;
 }
 
-.feature-container {
+.feature-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,7 +402,49 @@ img {
   width: 400px;
   height: 385px;
 
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.feature-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-item:first-child,
+.feature-item:last-child {
   background-color: #82B3D3;
+}
+
+.feature-image {
+  background-color: #82B3D3;
+}
+
+.feature-image-reverse-order {
+  order: -1;
+}
+
+.feature-title {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.feature-block .feature-title {
+  color: #FFFFFF;
+}
+
+.feature-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.feature-block .feature-description {
+  color: #FFFFFF;
 }
 
 .feature-content-divider {
@@ -429,31 +459,6 @@ img {
 
 .feature-content-divider-inverted {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.features-block-top .feature-title,
-.features-block-top p,
-.features-block-bottom .feature-title,
-.features-block-bottom p {
-  color: #FFFFFF;
-}
-
-.features-list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-}
-
-.features-item {
-  text-align: center;
-
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.features-item:nth-child(2n) {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-section {
@@ -791,8 +796,8 @@ img {
 }
 
 .search-results-list {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   gap: 20px;
   margin: 0 0 40px;
   padding: 0;
